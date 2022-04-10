@@ -6,83 +6,144 @@
         <div>
             <h4 class="logo-text">Rocker</h4>
         </div>
-        <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+        <div class="toggle-icon ms-auto"><i class="fa fa-arrow-left" aria-hidden="true"></i>
         </div>
     </div>
     <!--navigation-->
     <ul class="metismenu" id="menu">
 
-        {{-- //dashboard --}}
-
         <li>
-            <a href="{{ route("user.dashboard.view") }}">
+            <a href="{{ route("admin.dashboard.view") }}">
                 <div class="parent-icon"><i class='bx bx-pen'></i>
                 </div>
                 <div class="menu-title">Dashboard</div>
             </a>
         </li>
-
-        <li>
-            <a href="{{ route('user.wallet.view') }}">
-                <div class="parent-icon"><i class='bx bx-cookie'></i>
-                </div>
-                <div class="menu-title">Wallet</div>
-            </a>
-        </li>
-
-        <li>
-            <a href="{{ route('user.deposit.view', ['usd']) }}" >
-                <div class="parent-icon"><i class='bx bx-home-circle'></i>
-                </div>
-                <div class="menu-title">Deposit</div>
-            </a>
-        </li>
-
-
-        <li>
-            <a href="{{ route('user.plan.view', ['all']) }}">
-                <div class="parent-icon"><i class="bx bx-send"></i>
-                </div>
-                <div class="menu-title">Investment Plan</div>
-            </a>
-        </li>
-
-        <li>
-            <a href="{{ route('user.withdraw.view') }}">
-                <div class="parent-icon"><i class='bx bx-home-circle'></i>
-                </div>
-                <div class="menu-title">Withdraw</div>
-            </a>
-        </li>
-
-
-        <li>
-            <a href="{{ route('user.loan') }}">
-                <div class="parent-icon"><i class="bx bx-home-alt"></i>
-                </div>
-                <div class="menu-title">Apply For Loan</div>
-            </a>
-        </li>
+         
+        <br> 
 
         <li>
             <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="bx bx-user"></i>
+                <div class="parent-icon"><i class="fa fa-university" aria-hidden="true"></i>
                 </div>
-                <div class="menu-title">Profile Settings</div>
+                <div class="menu-title">Deposits</div>
             </a>
             <ul>
-                <li> <a href="{{ route('user.setting.view', ['general']) }}"><i class="bx bx-right-arrow-alt"></i>General Setting</a>
+                <li> <a href="{{ route("admin.deposit.view",["active"]) }}"><i class="bx bx-right-arrow-alt"></i>Active Deposits</a>
                 </li>
-                <li> <a href="{{ route('user.setting.view', ['payment']) }}"><i class="bx bx-right-arrow-alt"></i>Payment Data</a>
+                <li> <a href="{{ route("admin.deposit.view",["all"]) }}"><i class="bx bx-right-arrow-alt"></i>All Deposits</a>
                 </li>
-                <li> <a href="{{ route('user.setting.view', ['security']) }}"><i class="bx bx-right-arrow-alt"></i>Account Security</a>
+                </li>
+            </ul>
+        </li>
+ 
+        <br> 
+
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                </div>
+                <div class="menu-title">Loans</div>
+            </a>
+            <ul>
+                <li> <a href="{{ route('admin.loan.view', ['active']) }}"><i class="bx bx-right-arrow-alt"></i>Active Loans</a>
+                </li>
+                <li> <a href="{{ route('admin.loan.view', ['all']) }}"><i class="bx bx-right-arrow-alt"></i>All Loans</a>
                 </li>
             </ul>
         </li>
 
+        <br> 
+
         <li>
-            <a href="widgets.html">
-                <div class="parent-icon"><i class='bx bx-log-out'></i>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="fa fa-minus-circle" aria-hidden="true"></i>
+                </div>
+                <div class="menu-title">Withdrawals</div>
+            </a>
+            <ul>
+                <li> <a href="{{ route('admin.withdraw.view', ['active']) }}"><i class="bx bx-right-arrow-alt"></i>Active Withdrawals</a>
+                </li>
+            </ul>
+        </li>
+         
+        <br> 
+      
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="fa fa-book" aria-hidden="true"></i>
+                </div>
+                <div class="menu-title">Investments</div>
+            </a>
+            <ul>
+                <li> <a href="{{ route('admin.investment.view', ['active']) }}"><i class="bx bx-right-arrow-alt"></i>Active Investments</a>
+                </li>
+                <li> <a href="{{ route('admin.investment.view', ['all']) }}"><i class="bx bx-right-arrow-alt"></i>All Investments</a>
+                </li>
+            </ul>
+        </li>
+  
+        <br>
+
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                </div>
+                <div class="menu-title">Wallets</div>
+            </a>
+            <ul>
+                <li> <a href="{{ route('admin.wallet.view') }}"><i class="bx bx-right-arrow-alt"></i>Customers Wallets</a>
+                </li>
+            </ul>
+        </li>
+ 
+        <br> 
+
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="fa fa-wrench" aria-hidden="true"></i>
+                </div>
+                <div class="menu-title">App Users</div>
+            </a>
+            <ul>
+                <li> <a href="{{ route('admin.users.view', ['customer']) }}"><i class="bx bx-right-arrow-alt"></i>Customers</a>
+                </li>
+                <li> <a href="{{ route('admin.users.view', ['admin']) }}"><i class="bx bx-right-arrow-alt"></i>Administrators</a>
+                </li>
+            </ul>
+        </li>
+
+        <br>
+
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="fa fa-cog" aria-hidden="true"></i>
+                </div>
+                <div class="menu-title">App Settings</div>
+            </a>
+            <ul>
+                <li> <a href="{{ route('admin.plans.view') }}"><i class="bx bx-right-arrow-alt"></i>Plans Settings</a>
+                </li>
+                <li> <a href="{{ route('admin.application.view') }}"><i class="bx bx-right-arrow-alt"></i>Applications Settings</a>
+                </li>
+            </ul>
+        </li>
+
+        <br>
+
+        <li>
+            <a href="{{ route('admin.profile.view') }}">
+                <div class="parent-icon"><i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="menu-title">Profile</div>
+            </a>
+        </li>
+
+        <br>
+
+        <li>
+            <a href="{{ route("admin.logout") }}">
+                <div class="parent-icon"><i class="fa fa-eject" aria-hidden="true"></i>
                 </div>
                 <div class="menu-title">SignOut</div>
             </a>

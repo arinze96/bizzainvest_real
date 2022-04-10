@@ -33,7 +33,7 @@
 				<!--end breadcrumb-->
 				<div class="row">
 					<div class="col-xl-4 mx-auto">
-						<h6 class="mb-0 text-lowercase" style="text-align: center; color: grey ; font-size: 13px">Withdrawal of funds from your Bizzainvest account balance is available using 5 payment systems - BTC, ETH, LTC, USDT, Perfect Money. Select the account then select the payment system to which you want to withdraw funds, enter the withdrawal amount and click the "Withdraw".</h6>
+						<h6 class="mb-0 text-lowercase" style="text-align: center; color: grey ; font-size: 13px">Withdrawal of funds from your {{ ucwords(strtolower(config('app.name'))) }} account balance is available using 5 payment systems - BTC, ETH, LTC, USDT, Perfect Money. Select the account then select the payment system to which you want to withdraw funds, enter the withdrawal amount and click the "Withdraw".</h6>
                         <br>
                         <h6 class="mb-0 text-lowercase" style="text-align: center; color: grey ; font-size: 13px">IMPORTANT!!! Withdrawals are available only to those wallets that are saved in the "Payment Data" section.</h6>
 						<hr/>
@@ -42,38 +42,54 @@
 								<form class="row g-3">
                                     <div class="col-md-12">
 										<label for="inputState" class="form-label">Choose Accout</label>
-										<select id="inputState" class="form-select">
-											<option selected>Choose...</option>
-											<option>...</option>
+										<select name="currency" id="currency" class="form-select form-control-number charge_account">
+											<option data-balance="{{ $account->dolla_balance }}" value="USD"
+												class="small"></i>USD</option>
+											<option data-balance="{{ $account->bitcoin_balance }}" value="BTC"
+												class="small"></i>BTC</option>
+											<option data-balance="{{ $account->ethereum_balance }}" value="ETH"
+												class="small"></i>ETH</option>
 										</select>
 									</div>
                                     <div class="col-md-12">
 										<label for="inputState" class="form-label">Payment Method</label>
-										<select id="inputState" class="form-select">
-											<option selected>Choose...</option>
-											<option>...</option>
-										</select>
+										{{-- <select id="inputState" class="form-select"> --}}
+											<select class="payment_account form-control form-select  form-control-number" required>
+                                                <option value="" disabled selected hidden>Select Payment Method</option>
+                                                @if (!empty($account->bitcoin_address))
+                                                    <option value="BTC">BTC</option>
+                                                @endif
+                                                @if (!empty($account->usdt_address))
+                                                    <option value="USDT">USDT</option>
+                                                @endif
+                                                @if (!empty($account->ethereum_address))
+                                                    <option value="ETH">ETH</option>
+                                                @endif
+                                            </select>
+										{{-- </select> --}}
 									</div>
 									<div class="col-md-12">
 										<label for="inputLastName" class="form-label">Amount to withdraw</label>
-										<input type="password" class="form-control" id="inputLastName" placeholder="Enter Amount (USD)">
+										<span class=" text-center text-danger"></span>
+										<input type="text" class="form-control form-control-number withdrawal_amount"" id="inputLastName" placeholder="Enter Amount (USD)">
 									</div>
                                     <div class="col-md-12">
 										<label for="inputLastName" class="form-label">Add your wallet address</label>
-										<input type="password" class="form-control" id="inputLastName" placeholder="Enter Your Wallet Address">
+										<input type="text" class="form-control  form-control-number bitcoin_addr" placeholder="Enter Wallet Address">
 									</div>
                                     <div class="col-md-12">
 										<label for="inputLastName" class="form-label">Transaction Pin</label>
-										<input type="password" class="form-control" id="inputLastName" placeholder="Financial Pin">
+										<input type="text" class="form-control  form-control-number transaction_pin"
+										placeholder="Financial Pin">
 									</div>
 
 
 									<div class="col-md-12 ">
-										<button class="btn btn-outline-primary px-5 w-100">final balance <span>0</span>USD</button>
+										<button class="btn btn-outline-primary px-5 w-100 main_display">final balance <span>0</span>USD</button>
 									</div>
 
                                     <div class="col-md-12">
-										<button type="submit" class="btn btn-primary px-5 w-100">Withdraw</button>
+										<button type="submit" data-url="{{ route('user.withdraw.view') }}" class="btn btn-primary px-5 w-100 process_withdraw">Withdraw</button>
 									</div>
 								</form>
 							</div>

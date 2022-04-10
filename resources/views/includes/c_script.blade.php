@@ -12,6 +12,8 @@
 <script src="{{ asset("assets/js/jquery.min.js") }}"></script>
 <script src="{{ asset("assets/js/app.js") }}"></script>
 <script src="{{ asset("assets/js/index.js") }}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="{{ asset("assets/js/customer.js") }}"></script>
 <!--plugins-->
 <script src="{{ asset("assets/plugins/simplebar/js/simplebar.min.js") }}"></script>
 <script src="{{ asset("assets/plugins/metismenu/js/metisMenu.min.js") }}"></script>
@@ -19,6 +21,7 @@
 <script src="{{ asset("assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js") }}"></script>
 <script src="{{ asset("assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js") }}"></script>
 <script src="{{ asset("assets/plugins/chartjs/js/Chart.min.js") }}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="{{ asset("assets/plugins/chartjs/js/Chart.extension.js") }}"></script>
 <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 <!--app JS-->

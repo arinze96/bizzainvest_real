@@ -39,23 +39,27 @@
 				<h6 class="mb-0 text-uppercase">At a glance summary of your account. Have fun!!</h6>
 				<hr/>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-2">
-                    <div class="col-xl-6 mx-auto">
+                    <div class="col-xl-6 ">
 						<div class="card radius-10">
                             <div class="card-body">
 								<div class="d-flex align-items-center">
 									<div>
 										<p class="mb-0 text-secondary">Dollar Balance/ USD</p>
-										<h4 class="my-1">$0.0000</h4>
+										<h4 class="my-1">${{ number_format($wallet->dolla_balance, 0, '.', ',') }}</h4>
+									</div>
 									</div>
                                     &nbsp; &nbsp; &nbsp;
+									<div class="d-flex align-items-center">
                                     <div>
 										<p class="mb-0 text-secondary">Bitcoin Balance/ BTC</p>
-										<h4 class="my-1">0.0000</h4>
+										<h4 class="my-1">{{ $wallet->bitcoin_balance }}</h4>
+									</div>
 									</div>
                                     &nbsp; &nbsp; &nbsp;
+									<div class="d-flex align-items-center">
                                     <div>
 										<p class="mb-0 text-secondary">Ethereum Balance/ ETH</p>
-										<h4 class="my-1">0.0000</h4>
+										<h4 class="my-1">{{ $wallet->ethereum_balance }}</h4>
 									</div>
 								</div>
 							</div>
@@ -63,7 +67,7 @@
 								<div class="d-flex align-items-center">
 									<div>
 										<p class="mb-0 text-secondary">Refferral Balance/ USD</p>
-										<h4 class="my-1">$0.00</h4>
+										<h4 class="my-1">${{ number_format($wallet->referral_balance, 0, '.', ',') }}</h4>
 									</div>
 								</div>
 							</div>
@@ -71,51 +75,67 @@
 								<div class="d-flex align-items-center">
 									<div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">USD Deposit</p>
-										<h4 class="my-1" style="font-size: 12px">$0.00</h4>
+										<h4 class="my-1" style="font-size: 12px">${{ number_format($wallet->deposits, 0, '.', ',') }}</h4>
 									</div>
                                     &nbsp; &nbsp;
                                     <div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">USD Withdrawn</p>
-										<h4 class="my-1" style="font-size: 12px">$0.00</h4>
+										<h4 class="my-1" style="font-size: 12px">${{ number_format($wallet->dolla_withdrawals, 0, '.', ',') }}</h4>
 									</div>
                                     &nbsp; &nbsp;
                                     <div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">BTC Withdrawn</p>
-										<h4 class="my-1" style="font-size: 12px">0.00</h4>
+										<h4 class="my-1" style="font-size: 12px">{{ $wallet->bitcoin_withdrawals }}</h4>
 									</div>
                                     &nbsp; &nbsp;
-                                    <div>
+
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+									<div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">Ethereum Withdrawn</p>
-										<h4 class="my-1" style="font-size: 12px">0.00</h4>
+										<h4 class="my-1" style="font-size: 12px"> {{ $wallet->ethereum_withdrawals }}</h4>
+									</div>
+                                    &nbsp; &nbsp;
+									<div>
+										<p class="mb-0 text-secondary" style="font-size: 12px">USD Invested</p>
+										<h4 class="my-1" style="font-size: 12px">${{ number_format($wallet->dolla_invested, 0, '.', ',') }}</h4>
 									</div>
                                     &nbsp; &nbsp;
 								</div>
 							</div>
-                            <div class="card-body">
+							<div class="card-body">
 								<div class="d-flex align-items-center">
-									<div>
-										<p class="mb-0 text-secondary" style="font-size: 12px">USD Invested</p>
-										<h4 class="my-1" style="font-size: 12px">$0.00</h4>
-									</div>
-                                    &nbsp; &nbsp;
+									
                                     <div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">BTC Invested</p>
-										<h4 class="my-1" style="font-size: 12px">0.00</h4>
+										<h4 class="my-1" style="font-size: 12px">{{ $wallet->bitcoin_invested }}</h4>
 									</div>
                                     &nbsp; &nbsp;
                                     <div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">ETH Invested</p>
-										<h4 class="my-1" style="font-size: 12px">0.00</h4>
+										<h4 class="my-1" style="font-size: 12px">{{ $wallet->ethereum_invested }}</h4>
 									</div>
                                     &nbsp; &nbsp;
+
+									</div>
+									</div>
+
+
+
+							{{-- //////////////////////// --}}
+							<div class="card-body">
+								<div class="d-flex align-items-center">
+
                                     <div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">USD Earned</p>
-										<h4 class="my-1" style="font-size: 12px">$0.00</h4>
+										<h4 class="my-1" style="font-size: 12px">${{ number_format($wallet->dolla_earned, 0, '.', ',') }}</h4>
 									</div>
                                     &nbsp; &nbsp;
                                     <div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">BTC Earned</p>
-										<h4 class="my-1" style="font-size: 12px">0.00</h4>
+										<h4 class="my-1" style="font-size: 12px">{{ $wallet->ethereum_earned }}</h4>
 									</div>
                                     &nbsp; &nbsp;
 								</div>
@@ -124,7 +144,7 @@
 								<div class="d-flex align-items-center">
 									<div>
 										<p class="mb-0 text-secondary" style="font-size: 12px">ETH Earned</p>
-										<h4 class="my-1" style="font-size: 12px">$0.00</h4>
+										<h4 class="my-1" style="font-size: 12px">{{ $wallet->ethereum_earned }}</h4>
 									</div>
                                     &nbsp; &nbsp;
 								</div>

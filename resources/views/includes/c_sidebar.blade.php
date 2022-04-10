@@ -16,7 +16,7 @@
 
         <li>
             <a href="{{ route("user.dashboard.view") }}">
-                <div class="parent-icon"><i class='bx bx-pen'></i>
+                <div class="parent-icon"><i class="bx bx-home-alt"></i>
                 </div>
                 <div class="menu-title">Dashboard</div>
             </a>
@@ -24,7 +24,7 @@
 
         <li>
             <a href="{{ route('user.wallet.view') }}">
-                <div class="parent-icon"><i class='bx bx-cookie'></i>
+                <div class="parent-icon"><i class="fa fa-suitcase" aria-hidden="true"></i>
                 </div>
                 <div class="menu-title">Wallet</div>
             </a>
@@ -32,7 +32,7 @@
 
         <li>
             <a href="{{ route('user.deposit.view', ['usd']) }}" >
-                <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                <div class="parent-icon"><i class="fa fa-university" aria-hidden="true"></i>
                 </div>
                 <div class="menu-title">Deposit</div>
             </a>
@@ -41,7 +41,7 @@
 
         <li>
             <a href="{{ route('user.plan.view', ['all']) }}">
-                <div class="parent-icon"><i class="bx bx-send"></i>
+                <div class="parent-icon"><i class="fa fa-book" aria-hidden="true"></i>
                 </div>
                 <div class="menu-title">Investment Plan</div>
             </a>
@@ -49,7 +49,7 @@
 
         <li>
             <a href="{{ route('user.withdraw.view') }}">
-                <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                <div class="parent-icon"><i class="fa fa-minus-circle" aria-hidden="true"></i>
                 </div>
                 <div class="menu-title">Withdraw</div>
             </a>
@@ -58,7 +58,7 @@
 
         <li>
             <a href="{{ route('user.loan') }}">
-                <div class="parent-icon"><i class="bx bx-home-alt"></i>
+                <div class="parent-icon"><i class="fa fa-arrows-alt" aria-hidden="true"></i>
                 </div>
                 <div class="menu-title">Apply For Loan</div>
             </a>
@@ -66,7 +66,7 @@
 
         <li>
             <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="bx bx-user"></i>
+                <div class="parent-icon"><i class="fa fa-cog" aria-hidden="true"></i>
                 </div>
                 <div class="menu-title">Profile Settings</div>
             </a>
@@ -81,8 +81,8 @@
         </li>
 
         <li>
-            <a href="widgets.html">
-                <div class="parent-icon"><i class='bx bx-log-out'></i>
+            <a href="{{ route("user.logout.view") }}">
+                <div class="parent-icon"><i class="fa fa-eject" aria-hidden="true"></i>
                 </div>
                 <div class="menu-title">SignOut</div>
             </a>

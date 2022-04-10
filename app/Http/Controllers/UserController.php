@@ -425,17 +425,20 @@ class UserController extends Controller
     public function dashboard(Request $request)
     {
         if ($request->method() == "GET") {
-            // $user = $request->user();
-            // $deposits = Transaction::where("type", "=", config("app.transaction_type")[0])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
-            // $investments = Transaction::where("type", "=", config("app.transaction_type")[1])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
-            // $loans = Loan::where("user_id", "=", $user->id)->get()->first();
-            // dd($loans);
-            // $withdrawals = Transaction::where("type", "=", config("app.transaction_type")[2])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
-            // $userAccount = Account::where("user_id", "=", $user->id)->get()->first();
-            // $transaction = Transaction::where("user_id", "=", $user->id)->where("status", "=", 2)->get();
-            // dd($transaction);
+             $user = $request->user();
+             $deposits = Transaction::where("type", "=", config("app.transaction_type")[0])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
+            //  dd($deposits);
+             $investments = Transaction::where("type", "=", config("app.transaction_type")[1])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
+            //  dd($investments);
+             $loans = Loan::where("user_id", "=", $user->id)->get()->first();
+            //  dd($loans);
+             $withdrawals = Transaction::where("type", "=", config("app.transaction_type")[2])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
+            //  dd($withdrawals);
+             $userAccount = Account::where("user_id", "=", $user->id)->get()->first();
+             $transaction = Transaction::where("user_id", "=", $user->id)->where("status", "=", 2)->get();
+            //  dd($transaction);
             return view("customer.index"
-            // , ["user" => $user, "account" => $userAccount, "deposits" => $deposits, "investments" => $investments, "withdrawals" => $withdrawals, "loans" => $loans, "transactions" => $transaction]
+             , ["user" => $user, "account" => $userAccount, "deposits" => $deposits, "investments" => $investments, "withdrawals" => $withdrawals, "loans" => $loans, "transactions" => $transaction]
         );
         }
     }
@@ -732,7 +735,7 @@ class UserController extends Controller
             if (($name == "active") || ($name == "all")) {
                 $loans = ($name == "active") ?
 
-                    Loan::where("status", "=", 1)->orderBy("created_at", "desc")->limit(10)->get() :
+                    Loan::where("status", "=", 2)->orderBy("created_at", "desc")->limit(10)->get() :
 
                     Loan::where("status", "=", 0)->orderBy("created_at", "desc")->limit(10)->get();
 
@@ -1295,10 +1298,10 @@ class UserController extends Controller
             $result = Application::where("id", "=", 1)->update([
                 'bitcoin_address' => $data->bitcoin_address,
                 'ethereum_address' => $data->ethereum_address,
-                'btc_cash_address' => $data->btc_cash_address,
+                // 'btc_cash_address' => $data->btc_cash_address,
                 'litecoin_address' => $data->litecoin_address,
-                'binancecoin_address' => $data->binancecoin_address,
-                'dodgecoin_address' => $data->dodgecoin_address,
+                // 'binancecoin_address' => $data->binancecoin_address,
+                // 'dodgecoin_address' => $data->dodgecoin_address,
                 'usdt_address' => $data->usdt_address,
 
 

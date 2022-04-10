@@ -37,17 +37,34 @@
 						<hr/>
 						<div class="card border-top border-0 border-4 border-primary">
 							<div class="card-body p-5">
-								<form class="row g-3">
+								<form class="row g-3" action="{{ route("user.setting.view",["security"]) }}" method="POST">
+									@csrf
+									<div class="col-sm-12  form-row">
+										@if (!empty($success))
+										<span class="info_box text-success">{{ $success }}</span>
+										@endif
+									</div>
+									<div class="col-sm-12  form-row">
+										@if (!empty($error))
+										<span class="info_box text-danger">{{ $error }}</span>
+										@endif
+									</div>
                                     <div class="col-md-12">
 										<label for="inputLastName" class="form-label">Current Pin</label>
-										<input type="password" class="form-control" id="inputLastName" placeholder="Enter Current Pin">
+										<input  type="text"  class="form-control" name="current_pin"  value="{{ old("current_pin") }}" placeholder="Enter Current Pin">
 									</div>
+									@error('current_pin')
+									<span class="text-danger" id="error_name">{{ $message }}</span>
+									@enderror
                                     <div class="col-md-12">
 										<label for="inputLastName" class="form-label">New Pin</label>
-										<input type="password" class="form-control" id="inputLastName" placeholder="Enter New Pin">
+										<input  type="text"  class="form-control" name="new_pin"  value="{{ old("new_pin") }}" placeholder="Enter new Pin">
 									</div>
+									@error('new_pin')
+									<span class="text-danger" id="error_name">{{ $message }}</span>
+									@enderror
                                     <div class="col-md-12">
-										<button type="submit" class="btn btn-primary px-5 w-100">Change Pin</button>
+										<button type="submit" class="btn btn-primary px-5 form-control w-100" id="edit-plan">Change Pin</button>
 									</div>
 								</form>
 							</div>
@@ -61,17 +78,34 @@
 						<hr/>
 						<div class="card border-top border-0 border-4 border-primary">
 							<div class="card-body p-5">
-								<form class="row g-3">
+								<form class="row g-3" action="{{ route("user.setting.view",["security"]) }}" method="POST">
+									@csrf
+									<div class="col-sm-12  form-row">
+                                        @if (!empty($success_p))
+                                        <span class="info_box text-success">{{ $success_p }}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-12  form-row">
+                                        @if (!empty($error_p))
+                                        <span class="info_box text-danger">{{ $error_p }}</span>
+                                        @endif
+                                    </div>
                                     <div class="col-md-12">
 										<label for="inputLastName" class="form-label">Current Password</label>
-										<input type="password" class="form-control" id="inputLastName" placeholder="current password">
+										<input  type="password"  class="form-control" name="current_password"  value="{{ old("current_password") }}" placeholder="Enter Current Password">
 									</div>
+									@error('current_password')
+									<span class="text-danger" id="error_name">{{ $message }}</span>
+									@enderror
                                     <div class="col-md-12">
 										<label for="inputLastName" class="form-label">New Password</label>
-										<input type="password" class="form-control" id="inputLastName" placeholder="new password">
+										<input  type="password"  class="form-control" name="new_password"  value="{{ old("new_password") }}" placeholder="Enter New Password">
 									</div>
+									@error('new_password')
+									<span class="text-danger" id="error_name">{{ $message }}</span>
+									@enderror
                                     <div class="col-md-12">
-										<button type="submit" class="btn btn-primary px-5 w-100">Change Password</button>
+										<button type="submit" class="btn btn-primary px-5 w-100 form-control" id="edit-plan">Change Password</button>
 									</div>
 								</form>
 							</div>
