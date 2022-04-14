@@ -39,7 +39,7 @@ body{
     overflow-x: hidden;
 } */
 nav{
-    height: 12rem;
+    height: 8rem;
     width: 100vw;
     background-color: #131418;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
