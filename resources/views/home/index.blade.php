@@ -26,7 +26,7 @@
                             <div class="slide-content text-center">
                                 <h2 class="title2">Best secure investment plan</h2>
                                 <div class="layer-1-3">
-                                    <a href="#" class="ready-btn left-btn">Get started</a>
+                                    <a href="{{ route('user.login') }}" class="ready-btn left-btn">Get started</a>
                                     <div class="video-content">
                                         <a href="https://www.youtube.com/watch?v=O33uuBh6nXA"
                                             class="video-play vid-zone">
