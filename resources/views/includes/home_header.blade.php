@@ -16,7 +16,7 @@
         <li><a class="pages" href="{{ route('user.terms') }}">Terms</a></li>
         <li>
             <a href="{{ route('user.login') }}">
-                <button style="background-color: orange; width: 150px" type="button" class="btn btn-primary">Login</button>
+                Login
             </a>
         </li>
         <li>
@@ -24,5 +24,8 @@
                 <button style="background-color: orange; width: 150px" type="button" class="btn btn-primary">Register</button>
             </a>
         </li>
+        <li><a href="{{ route('app.home') }}"><i class="fa fa-envelope"></i> info@aievari4.com</a>
+        </li>
+        <li><a href="{{ route('app.home') }}"><i class="fa fa-phone"></i> +909-654-9805</a></li>
     </ul>
 </nav>
