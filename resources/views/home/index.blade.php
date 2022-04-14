@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
 @include('includes.home_css')
-<!-- Mirrored from rockstheme.com/rocks/aievari-live/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 18:29:30 GMT -->
 
 <head>
     <meta charset="utf-8">
@@ -17,14 +16,6 @@
 @include('includes.home_header')
 
 <body>
-
-    <!--[if lt IE 8]>
-   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-
-    <!-- header end -->
-    <!-- Start Intro Area -->
     <div class="slide-area fix" data-stellar-background-ratio="0.6">
         <div class="display-table">
             <div class="display-table-cell">
@@ -52,9 +43,7 @@
             </div>
         </div>
     </div>
-    <!-- End Intro Area -->
 
-    <!-- Start Count area -->
     <div class="counter-area fix area-padding-2">
         <div class="container">
             <!-- Start counter Area -->
@@ -96,8 +85,7 @@
             </div>
         </div>
     </div>
-    <!-- End Count area -->
-    <!-- Start Invest area -->
+
     <div class="page-area">
         <div class="breadcumb-overlay"></div>
         <div class="container">
@@ -113,8 +101,7 @@
             </div>
         </div>
     </div>
-    <!-- End breadcumb Area -->
-    <!-- Start Invest area -->
+
     <div class="invest-area bg-color page-padding-2">
         <div class="container">
             <div class="row">
@@ -251,6 +238,7 @@
     </div>
     </div>
     </div>
+
     <section>
         <div class="container" style="overflow: scroll;">
             <!-- TradingView Widget BEGIN -->

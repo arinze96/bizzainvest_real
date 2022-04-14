@@ -54,7 +54,11 @@
             <div class="user-box dropdown">
                 <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="{{ asset("assets/images/avatars/avatar-2.png") }}" class="user-img" alt="user avatar">
+                    <div style="width: 50px; height: 50px; border-radius: 50px; display: flex; background-color:antiquewhite; border: 1px solid black; justify-content:center; align-items: center"
+                        class="bg-primary-dim">
+                        <span
+                            style="text-align: center; font-weight:bolder; color:grey">{{ substr(auth()->user()->username,0,2) }}</span>
+                    </div>
                     <div class="user-info ps-3">
                         <p class="user-name mb-0">{{ auth()->user()->username }}</p>
                         {{-- <p class="designattion mb-0">Web Designer</p> --}}

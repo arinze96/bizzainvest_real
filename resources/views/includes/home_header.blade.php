@@ -1,7 +1,3 @@
-<!--[if lt IE 8]>
-   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
 <div id="preloader"></div>
 <header class="header-one">
     <!-- Start top bar -->
@@ -70,7 +66,8 @@
                                             <li><a href="{{ route('about') }}">About Us</a></li>
                                             <li><a href="{{ route('investmentplans') }}">Investment plans</a></li>
                                             <li><a class="pages" href="{{ route('user.faq') }}">FAQ</a></li>
-                                            <li><a class="pages" href="{{ route('user.terms') }}">Terms</a></li>
+                                            <li><a class="pages" href="{{ route('user.terms') }}">Terms</a>
+                                            </li>
                                             <li><a href="{{ route('user.register') }}">REGISTER</a></li>
 
                                         </ul>
@@ -84,6 +81,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- header-area end -->
     <!-- mobile-menu-area start -->
     <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
@@ -103,7 +102,8 @@
                                 <li><a href="{{ route('investmentplans') }}">Investment Plans</a></li>
                                 <li><a class="pages" href="{{ route('user.faq') }}">FAQ</a></li>
                                 <li><a class="pages" href="{{ route('user.terms') }}">Terms</a></li>
-                                <li><a href="{{ route('user.register') }}">REGISTER</a></li>
+                                <li><a href="{{ route('user.login') }}">Login/a></li>
+                                <li><a href="{{ route('user.register') }}">Register/a></li>
                             </ul>
                         </nav>
                     </div>
