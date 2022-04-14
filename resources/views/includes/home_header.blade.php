@@ -102,8 +102,8 @@
                                 <li><a href="{{ route('investmentplans') }}">Investment Plans</a></li>
                                 <li><a class="pages" href="{{ route('user.faq') }}">FAQ</a></li>
                                 <li><a class="pages" href="{{ route('user.terms') }}">Terms</a></li>
-                                <li><a href="{{ route('user.login') }}">Login/a></li>
-                                <li><a href="{{ route('user.register') }}">Register/a></li>
+                                <li><a href="{{ route('user.login') }}">Login</a></li>
+                                <li><a href="{{ route('user.register') }}">Register</a></li>
                             </ul>
                         </nav>
                     </div>
