@@ -1,4 +1,4 @@
-<!doctype html>
+div<!doctype html>
 <html lang="en">
 
 <head>
@@ -32,18 +32,19 @@
                                 </nav>
                             </div>
                             <div class="ms-auto">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-success">Copy Referral Link</button> &nbsp;
-                                    <button type="button" class="btn btn-primary"> <input type="text"
-                                            value="{{ route('user.register', [auth()->user()->username]) }}"
-                                            placeholder="referral link" style="border-radius: 20px,"> </button>
-                                </div>
+
                             </div>
                         </div>
                         
                         <!--end breadcrumb-->
                         <h6 class="mb-0 text-uppercase">At a glance summary of your account. Have fun!!</h6>
                         <hr />
+                        <div class="btn-group" style="margin-bottom: 20px">
+                            {{-- <button type="button" class="btn btn-success">Copy Referral Link</button> &nbsp; --}}
+                            <input type="text" value="{{ route('user.register', [auth()->user()->username]) }}">
+                            <button class="btn btn-copy" data-feedback=" Copied"><i class="fa fa-clone" style="color: skyblue" aria-hidden="true"></i></button>
+                           
+                        </div>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
                             <div class="col">
                                 <div class="card radius-10 border-start border-0 border-3 border-info">
