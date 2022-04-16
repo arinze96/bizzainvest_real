@@ -65,16 +65,14 @@
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="{{ route('admin.profile.view') }}"><i
-                                class="bx bx-user"></i><span>Profile</span></a>
-                    </li>
-                    <li><a class="dropdown-item" href="{{ route('admin.application.view') }}"><i
+                    
+                    <li><a class="dropdown-item" href="{{ route('user.setting.view', ['general']) }}"><i
                                 class="bx bx-cog"></i><span>Settings</span></a>
                     </li>
                     <li>
                         <div class="dropdown-divider mb-0"></div>
                     </li>
-                    <li><a class="dropdown-item" href="{{ route("admin.logout") }}"><i
+                    <li><a class="dropdown-item" href="{{ route("user.logout.view") }}"><i
                                 class='bx bx-log-out-circle'></i><span>Logout</span></a>
                     </li>
                 </ul>
