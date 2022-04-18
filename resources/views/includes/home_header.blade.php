@@ -24,7 +24,7 @@
                 <button style="background-color: rgb(152,204,159); width: 150px" type="button" class="btn btn-primary">Register</button>
             </a>
         </li>
-        <li><a href="{{ route('app.home') }}"><i class="fa fa-envelope"></i> info@aievari4.com</a>
+        <li><a href="{{ route('app.home') }}"><i class="fa fa-envelope"></i> support@bitazzainvest.com</a>
         </li>
         <li><a href="{{ route('app.home') }}"><i class="fa fa-phone"></i> +909-654-9805</a></li>
     </ul>

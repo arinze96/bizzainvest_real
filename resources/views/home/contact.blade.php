@@ -63,8 +63,8 @@
                                 <div class="single-icon">
                                     <i class="fa fa-envelope-o"></i>
                                     <p>
-                                        Email : Aievar3@gmail.com<br>
-                                        <span>Web: www.rockstheme.com</span>
+                                        Email : support@bitazzainvest.com<br>
+                                        <span>Web: www.bitazzainvest.com</span>
                                     </p>
                                 </div>
                             </div>
