@@ -65,14 +65,14 @@
 											<div class="panel-heading">
 												<h4 class="check-title">
 													<a data-toggle="collapse" class="active" data-parent="#accordion" href="#check1">
-														<span class="acc-icons"></span>HOW CAN I INVEST WITH BIZZA INVEST?
+														<span class="acc-icons"></span>HOW CAN I INVEST WITH Bitazza INVEST?
 													</a>
 												</h4>
 											</div>
 											<div id="check1" class="panel-collapse collapse in">
 												<div class="panel-body">
 													<p>
-														To make a investment you must first become a member of bizza invest . Once you are signed up, you can make your first deposit. All deposits must be made through the Members Area. You can login using the member username and password you receive when signup.</p>
+														To make a investment you must first become a member of Bitazza invest . Once you are signed up, you can make your first deposit. All deposits must be made through the Members Area. You can login using the member username and password you receive when signup.</p>
                      
 													</p>		
 												</div>
@@ -84,7 +84,7 @@
 											<div class="panel-heading">
 												<h4 class="check-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#check2">
-														<span class="acc-icons"></span>I WISH TO INVEST WITH BIZZA INVEST BUT I DON'T HAVE AN ANY ECURRENCY ACCOUNT. WHAT SHOULD I DO
+														<span class="acc-icons"></span>I WISH TO INVEST WITH Bitazza INVEST BUT I DON'T HAVE AN ANY ECURRENCY ACCOUNT. WHAT SHOULD I DO
 													</a>
 												</h4>
 											</div>
@@ -105,7 +105,7 @@
 											<div class="panel-heading">
 												<h4 class="check-title">
 													<a data-toggle="collapse" data-parent="#accordion" href="#check3">
-														<span class="acc-icons"></span>HOW DO I OPEN MY BIZZA INVEST ACCOUNT?
+														<span class="acc-icons"></span>HOW DO I OPEN MY Bitazza INVEST ACCOUNT?
 													</a>
 												</h4>
 											</div>

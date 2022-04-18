@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                        {{-- <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="pri_table_list">
                                 <div class="top-price-inner">
                                     <span class="base">STANDARD</span>
@@ -92,7 +92,7 @@
                                     <a class="blue" href="{{route('user.register')}}">GET STARTED</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="pri_table_list">
                                 <div class="top-price-inner">
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                        {{-- <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="pri_table_list">
                                 <div class="top-price-inner">
                                     <span class="base">PROFESSIONAL</span>
@@ -152,7 +152,7 @@
                                     <a class="blue" href="{{route('user.register')}}">GET STARTED</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="pri_table_list">
                                <span class="base">ULTRA</span>

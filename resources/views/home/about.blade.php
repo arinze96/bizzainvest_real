@@ -59,7 +59,7 @@
                 <!-- column end -->
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="about-content">
-                        <p>Bizza Invest company's works in the sphere of investment. The clients cooperating with us
+                        <p>Bitazza Invest company's works in the sphere of investment. The clients cooperating with us
                             conclude the agreement on placement of the capitals then they draw interest from profit.
                             Client does not need to think independently, which project investing in is more profitable.
                             All strategy has already thought over and can be presented in the form of the step-by-step
@@ -67,7 +67,7 @@
                     </div>
                     <p class="about-p">Each person knows importance of investment of their savings. Money has to
                         work. At the same time many projects are quite risky therefore investments into them are
-                        dangerous. The Bizza Invest company specializes in investments in a blockchain and the register.
+                        dangerous. The Bitazza Invest company specializes in investments in a blockchain and the register.
                         We see these directions the most profitable and perspective. Unlike cryptocurrencies, these
                         industries have smaller risks for the investor.</p>
 
@@ -185,11 +185,11 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="feature-text">
                         <h3>Your investment money more safe and secure</h3>
-                        <p><p>When you choose Bizza Invest, you will get a dedicated Investment Counselor who
+                        <p><p>When you choose Bitazza Invest, you will get a dedicated Investment Counselor who
                             acts as a liaison between you and the IPC, communicates changes about your portfolio
                             to you and helps you stay informed about investment strategy.</p>
                         <p>You will also have access to a variety of events designed to provide regular market
-                            updates and answer any questions you have about your Bizza Invest portfolio,
+                            updates and answer any questions you have about your Bitazza Invest portfolio,
                             Unlike most Brokerage Firm that keep you in the dark. These are just some of the
                             ways in which Monetarytrades provides clients with a flexible investment strategy
                             designed to help them respond to market shifts.</p>

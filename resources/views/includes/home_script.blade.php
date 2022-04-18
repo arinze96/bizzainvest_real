@@ -66,3 +66,7 @@
         hamburger.classList.toggle("toggle");
     });
 </script>
+
+<script>
+    let ran1 = Math.round(Math.random() * 100000)
+</script>

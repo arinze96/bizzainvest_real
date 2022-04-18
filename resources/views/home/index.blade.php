@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>BIZZA INVEST</title>
+    <title>Bitazza INVEST</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    {{-- <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="pri_table_list">
                             <div class="top-price-inner">
                                 <span class="base">STANDARD</span>
@@ -149,7 +149,7 @@
                                 <a class="blue" href="{{ route('user.register') }}">GET STARTED</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="pri_table_list">
                             <div class="top-price-inner">
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    {{-- <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="pri_table_list">
                             <div class="top-price-inner">
                                 <span class="base">PROFESSIONAL</span>
@@ -209,7 +209,7 @@
                                 <a class="blue" href="{{ route('user.register') }}">GET STARTED</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="pri_table_list">
                             <span class="base">ULTRA</span>
@@ -275,13 +275,13 @@
                 <div class="col-lg-6 ">
                     <div style="">
                         <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
-                            src="{{ asset('assets/img/certificate2.png') }}" alt="About" />
+                            src="{{ asset('assets/images/just2.jpg') }}" alt="About" />
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-6 ">
                     <div style="">
                         <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
-                            src="{{ asset('assets/img/certificate1.png') }}" alt="About" />
+                            src="{{ asset('assets/images/just3.jpg') }}" alt="About" />
                     </div>
                 </div>
             </div>
@@ -404,7 +404,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="section-headline text-center">
                         <h3>Referral bonus level</h3>
-                        Bonus referral program by Bizza Invest is provided for those who invate clients. If you telling
+                        Bonus referral program by Bitazza Invest is provided for those who invate clients. If you telling
                         about advantages of our company,
                         then it is possible not only to help them to receive financial benefit, but also to receive
                         additional percent.
@@ -492,38 +492,38 @@
                                     </tr>
                                     <tr>
                                         <td>Admond sayhel</td>
-                                        <td>april 02, 2022</td>
-                                        <td>$1000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>Bitcoin</td>
                                     </tr>
                                     <tr>
                                         <td>Jonshon</td>
-                                        <td>march 12, 2022</td>
-                                        <td>$5000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td>Hopper</td>
-                                        <td>march 22, 2022</td>
-                                        <td>$4000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>Ripple</td>
                                     </tr>
                                     <tr>
                                         <td>Admond sayhel</td>
-                                        <td>march 05, 2022</td>
-                                        <td>$3000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>Bitcoin</td>
                                     </tr>
                                     <tr>
                                         <td>Anjel july</td>
-                                        <td>march 02, 2022</td>
-                                        <td>$500</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td>Lagisha</td>
-                                        <td>feb 28, 2020</td>
-                                        <td>$5000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>Bitcoin</td>
                                     </tr>
                                 </table>
@@ -544,38 +544,38 @@
                                     </tr>
                                     <tr>
                                         <td>Arnold</td>
-                                        <td>april 07, 2022</td>
-                                        <td>$1000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td>Jhon Abra</td>
-                                        <td>april 04, 2022</td>
-                                        <td>$6000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td>Lanisha</td>
-                                        <td>march 31, 2022</td>
-                                        <td>$5000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td>Gongales</td>
-                                        <td>march 26, 2022</td>
-                                        <td>$2000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td>Admond sayhel</td>
-                                        <td>march 10, 2022</td>
-                                        <td>$1000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td>Remond</td>
-                                        <td>march 02, 2022</td>
-                                        <td>$3000</td>
+                                        <td><?php echo date('d F, Y (l)'); ?></td>
+                                        <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                 </table>
@@ -647,7 +647,7 @@
 
                             <a href="#">
                                 <h3>Business Consulting</h3>
-                                <p>At Bizza Invest we are on daily standby for Business Consulting</p>
+                                <p>At Bitazza Invest we are on daily standby for Business Consulting</p>
 
                             </a>
                         </div>
@@ -666,7 +666,7 @@
 
                             <a href="#">
                                 <h3>Financial Analysis</h3>
-                                <p>Our experts at Bizza Invest make proper market analysis before investing funds </p>
+                                <p>Our experts at Bitazza Invest make proper market analysis before investing funds </p>
 
                             </a>
                         </div>
@@ -719,7 +719,7 @@
                                                 <a href="#"><i class="ti-star"></i></a>
                                                 <a href="#"><i class="ti-star"></i></a>
                                             </div>
-                                            <p>The past couple of months I have invested with Bizza invest I have been
+                                            <p>The past couple of months I have invested with Bitazza invest I have been
                                                 very pleased with their superb investment model and their professional &
                                                 outstanding staff.</p>
 
@@ -745,7 +745,7 @@
                                                 <a href="#"><i class="ti-star"></i></a>
                                                 <a href="#"><i class="ti-star"></i></a>
                                             </div>
-                                            <p> I have been investing in Bizza Invest since July 2021, They are truly
+                                            <p> I have been investing in Bitazza Invest since July 2021, They are truly
                                                 amazing and are a key to me being able to retire from my job! I love
                                                 their professionalism and responsiveness.</p>
                                         </div>
@@ -770,7 +770,7 @@
                                                 <a href="#"><i class="ti-star"></i></a>
                                                 <a href="#"><i class="ti-star"></i></a>
                                             </div>
-                                            <p>Bizza Invest offers excellent customer service and passive income
+                                            <p>Bitazza Invest offers excellent customer service and passive income
                                                 products that perform well even when the markets are crazy. I’ve been
                                                 investing with them for 10 months and it’s been a great experience so
                                                 far.</p>
@@ -798,7 +798,7 @@
                                                 <a href="#"><i class="ti-star"></i></a>
                                                 <a href="#"><i class="ti-star"></i></a>
                                             </div>
-                                            <p>BIZZA INVEST will help you manage your crypto portfolio... i can attest
+                                            <p>Bitazza INVEST will help you manage your crypto portfolio... i can attest
                                                 to that </p>
                                         </div>
                                         <div class="testi-img ">
@@ -844,7 +844,7 @@
                                             <h4 class="check-title">
                                                 <a data-toggle="collapse" class="active"
                                                     data-parent="#accordion" href="#check1">
-                                                    <span class="acc-icons"></span>HOW CAN I INVEST WITH BIZZA
+                                                    <span class="acc-icons"></span>HOW CAN I INVEST WITH Bitazza
                                                     INVEST?
                                                 </a>
                                             </h4>
@@ -852,7 +852,7 @@
                                         <div id="check1" class="panel-collapse collapse in">
                                             <div class="panel-body">
                                                 <p>
-                                                    To make a investment you must first become a member of bizza invest
+                                                    To make a investment you must first become a member of Bitazza invest
                                                     . Once you are signed up, you can make your first deposit. All
                                                     deposits must be made through the Members Area. You can login using
                                                     the member username and password you receive when signup.</p>
@@ -867,7 +867,7 @@
                                         <div class="panel-heading">
                                             <h4 class="check-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#check2">
-                                                    <span class="acc-icons"></span>I WISH TO INVEST WITH BIZZA
+                                                    <span class="acc-icons"></span>I WISH TO INVEST WITH Bitazza
                                                     INVEST BUT I DON'T HAVE AN ANY ECURRENCY ACCOUNT. WHAT SHOULD I DO
                                                 </a>
                                             </h4>
@@ -893,7 +893,7 @@
                                         <div class="panel-heading">
                                             <h4 class="check-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#check3">
-                                                    <span class="acc-icons"></span>HOW DO I OPEN MY BIZZA INVEST
+                                                    <span class="acc-icons"></span>HOW DO I OPEN MY Bitazza INVEST
                                                     ACCOUNT?
                                                 </a>
                                             </h4>

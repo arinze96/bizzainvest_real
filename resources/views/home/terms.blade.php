@@ -53,9 +53,9 @@
 
                 <p>You agree to be of legal age in your country to partake in this program, and in all the cases your
                     minimal age must be 18 years.</p>
-                <p>Bizza Invest is not available to the general public and is opened only to the qualified members of
-                    Bizza Invest, the use of this site is restricted to our members and to individuals personally invited
-                    by them. Every deposit is considered to be a private transaction between the Bizza Invest and its
+                <p>Bitazza Invest is not available to the general public and is opened only to the qualified members of
+                    Bitazza Invest, the use of this site is restricted to our members and to individuals personally invited
+                    by them. Every deposit is considered to be a private transaction between the Bitazza Invest and its
                     Member.</p>
                 <p>
                     As a private transaction, this program is exempt from the US Securities Act of 1933, the US
@@ -65,7 +65,7 @@
                 </p>
 
                 <p>
-                    You agree that all information, communications, materials coming from Bizza Invest are unsolicited
+                    You agree that all information, communications, materials coming from Bitazza Invest are unsolicited
                     and must be kept private, confidential and protected from any disclosure. Moreover, the information,
                     communications and materials contained herein are not to be regarded as an offer, nor a solicitation
                     for investments in any jurisdiction which deems non-public offers or solicitations unlawful, nor to
@@ -73,8 +73,8 @@
                 </p>
 
                 <p>
-                    All the data giving by a member to Bizza Invest will be only privately used and not disclosed to any
-                    third parties. Bizza Invest is not responsible or liable for any loss of data.
+                    All the data giving by a member to Bitazza Invest will be only privately used and not disclosed to any
+                    third parties. Bitazza Invest is not responsible or liable for any loss of data.
                 </p>
 
                 <p>
@@ -91,7 +91,7 @@
                 </p>
 
                 <p>
-                    Bizza Invest is not responsible or liable for any damages, losses and costs resulting from any
+                    Bitazza Invest is not responsible or liable for any damages, losses and costs resulting from any
                     violation of the conditions and terms and/or use of our website by a member. You guarantee to
                     Iqiglobalfx that you will not use this site in any illegal way and you agree to respect your local,
                     national and international laws.
@@ -109,7 +109,7 @@
                 </p>
 
                 <p>
-                    Bizza Invest reserves the right to accept or decline any member for membership without explanation.
+                    Bitazza Invest reserves the right to accept or decline any member for membership without explanation.
                 </p>
 
                 <h4>

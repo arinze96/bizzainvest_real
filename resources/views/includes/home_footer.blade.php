@@ -7,10 +7,10 @@
                     <div class="footer-content logo-footer">
                         <div class="footer-head">
                             <div class="footer-logo">
-                                <a class="footer-black-logo" href="{{route('app.home')}}"><img src=" {{asset('assets/img/logo/BizzaInvest-02.png')}}" alt="" width="250" height="400"></a>
+                                <a class="footer-black-logo" href="{{route('app.home')}}"><img class="img2" src=" {{asset('assets/images/just1.jpg')}}" alt="" width="250" height="400"></a>
                             </div>
                             <p>
-                                <p>BIZZA INVEST company works in the sphere of investment. We are legally registered  Worldwide.  
+                                <p>Bitazza Invest company works in the sphere of investment. We are legally registered  Worldwide.  
                                      The clients cooperating with us conclude the agreement on placement of the capitals then they 
                                      draw interest from profit.
                             </p>
@@ -88,7 +88,7 @@
                     <div class="copyright">
                         <p>
                             Copyright © 2022
-                            <a href="{{route('app.home')}}">BIZZA INVEST</a> All Rights Reserved
+                            <a href="{{route('app.home')}}">Bitazza INVEST</a> All Rights Reserved
                         </p>
                     </div>
                 </div>
