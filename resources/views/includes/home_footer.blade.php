@@ -7,7 +7,7 @@
                     <div class="footer-content logo-footer">
                         <div class="footer-head">
                             <div class="footer-logo">
-                                <a class="footer-black-logo" href="{{route('app.home')}}"><img class="img2" src=" {{asset('assets/images/just1.jpg')}}" alt="" width="250" height="400"></a>
+                                <a class="footer-black-logo" href="{{route('app.home')}}"><img class="img2" src=" {{asset('assets/images/btz.png')}}" alt="" width="250" height="400"></a>
                             </div>
                             <p>
                                 <p>Bitazza Invest company works in the sphere of investment. We are legally registered  Worldwide.  
@@ -47,7 +47,7 @@
                         <div class="footer-head">
                             <h4>Information</h4> 
                             <div class="footer-contacts">
-                                <p><span>Tel :</span> +0890-564-5644</p>
+                                <p><span>Tel :</span> +447760784971</p>
                                 <p><span>Email :</span> info@aievari4.com</p>
                                 <p><span>Location :</span> House- 65/4, London</p>
                             </div> 

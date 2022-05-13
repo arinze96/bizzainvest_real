@@ -1,7 +1,7 @@
 <nav>
     <div class="logo">
         {{-- <img src="logo.svg" alt="Logo Image"> --}}
-        <a href="{{ route('app.home') }}"><img class="img1" src="{{ asset('assets/images/just1.jpg') }}" alt="" width="100px" height="100px" /></a>
+        <a href="{{ route('app.home') }}"><img class="img1" src="{{ asset('assets/images/btz1.png') }}" alt=""  /></a>
     </div>
     <div class="hamburger">
         <div class="line1"></div>
@@ -26,6 +26,6 @@
         </li>
         <li><a href="{{ route('app.home') }}"><i class="fa fa-envelope"></i> support@bitazzainvest.com</a>
         </li>
-        <li><a href="{{ route('app.home') }}"><i class="fa fa-phone"></i> +909-654-9805</a></li>
+        <li><a href="{{ route('app.home') }}"><i class="fa fa-phone"></i> +447760784971</a></li>
     </ul>
 </nav>
