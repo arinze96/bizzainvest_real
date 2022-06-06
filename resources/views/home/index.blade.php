@@ -56,7 +56,7 @@
                             <!-- Start Slider content -->
                             <div class="slide-content text-center">
                                 <h4 class="title2" >Freedom Begins Here</h4>
-                                <h4  style="color: white">Start your crypto journey on the world's fastest growing investment and crypto trading platform. i you are seeking financial freedom this is the best platform for you</h4>
+                                {{-- <h4  style="color: white">Start your crypto journey on the world's fastest growing investment and crypto trading platform. i you are seeking financial freedom this is the best platform for you</h4> --}}
                                 <div class="layer-1-3">
                                     <a href="{{ route('user.login') }}" class="ready-btn left-btn">Get started</a>
                                     <div class="video-content">
@@ -299,7 +299,7 @@
     <!-- End Invest area -->
     <div class="col-lg-12 text-center mt-4">
 
-        <h2 style="margin-top: 10px;">Our <span> Certifications</span></h2>
+        {{-- <h2 style="margin-top: 10px;">Our <span> Certifications</span></h2> --}}
     </div>
     <div class="col-lg-12">
         <div class="about-img">
