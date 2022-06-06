@@ -49,12 +49,12 @@ windows.on('scroll', function() {
  scrollUp
 ---------------------------- */
 	
-	// $.scrollUp({
-	// 	scrollText: '<i class="ti-angle-up"></i>',
-	// 	easingType: 'linear',
-	// 	scrollSpeed: 900,
-	// 	animation: 'fade'
-	// });
+		// $.scrollUp({
+		// 	scrollText: '<i class="ti-angle-up"></i>',
+		// 	easingType: 'linear',
+		// 	scrollSpeed: 900,
+		// 	animation: 'fade'
+		// });
     
 	
 /*--------------------------

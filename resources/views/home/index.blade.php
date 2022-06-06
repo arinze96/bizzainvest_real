@@ -16,19 +16,51 @@
 @include('includes.home_header')
 
 <body>
-    <div class="slide-area fix" data-stellar-background-ratio="0.6">
+
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Certification of Incoporation</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-lg-12 ">
+                    <div style="">
+                        <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
+                            src="{{ asset('assets/images/cert5.jpg') }}" alt="About" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-12 ">
+                    <div style="margin-top: 50px ">
+                        <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
+                            src="{{ asset('assets/images/just3.jpg') }}" alt="About" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              {{-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> --}}
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="slide-area fix" data-stellar-background-ratio="0.6" >
         <div class="display-table">
-            <div class="display-table-cell">
+            <div class="display-table-cell" id="particles-js">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <!-- Start Slider content -->
                             <div class="slide-content text-center">
-                                <h2 class="title2">Best secure investment plan</h2>
+                                <h4 class="title2" >Freedom Begins Here</h4>
+                                <h4  style="color: white">Start your crypto journey on the world's fastest growing investment and crypto trading platform. i you are seeking financial freedom this is the best platform for you</h4>
                                 <div class="layer-1-3">
                                     <a href="{{ route('user.login') }}" class="ready-btn left-btn">Get started</a>
                                     <div class="video-content">
-                                        <a href="https://www.youtube.com/watch?v=O33uuBh6nXA"
+                                        <a href="https://youtu.be/SKlduIEsp9c"
                                             class="video-play vid-zone">
                                             <i class="fa fa-play"></i>
                                             <span>watch video</span>
@@ -272,16 +304,15 @@
     <div class="col-lg-12">
         <div class="about-img">
             <div class="row align-items-end">
-                <div class="col-lg-6 ">
-                    <div style="">
-                        <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
-                            src="{{ asset('assets/images/just2.jpg') }}" alt="About" />
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-6 ">
-                    <div style="">
-                        <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
-                            src="{{ asset('assets/images/just3.jpg') }}" alt="About" />
+                <div class="col-lg-12 ">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls>
+                            <source src="{{ asset('assets/videos/nh.mp4') }}"
+                                {{-- poster="{{ asset('assets/images/blog/Bristle Assets-01.png') }}" --}}
+
+                                 type="video/mp4">
+                            </source>
+                        </video>
                     </div>
                 </div>
             </div>
@@ -491,37 +522,37 @@
                                         <th>Currency</th>
                                     </tr>
                                     <tr>
-                                        <td>Admond sayhel</td>
+                                        <td id="j1"></td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>Bitcoin</td>
                                     </tr>
                                     <tr>
-                                        <td>Jonshon</td>
+                                        <td id="j2">Jonshon</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
-                                        <td>Hopper</td>
+                                        <td id="j3">Hopper</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>Ripple</td>
                                     </tr>
                                     <tr>
-                                        <td>Admond sayhel</td>
+                                        <td id="j4">Admond sayhel</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>Bitcoin</td>
                                     </tr>
                                     <tr>
-                                        <td>Anjel july</td>
+                                        <td id="j5">Anjel july</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
-                                        <td>Lagisha</td>
+                                        <td id="j6">Lagisha</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>Bitcoin</td>
@@ -543,37 +574,37 @@
                                         <th>Currency</th>
                                     </tr>
                                     <tr>
-                                        <td>Arnold</td>
+                                        <td id="j7">Arnold</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
-                                        <td>Jhon Abra</td>
+                                        <td id="j8">Jhon Abra</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
-                                        <td>Lanisha</td>
+                                        <td id="j9">Lanisha</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
-                                        <td>Gongales</td>
+                                        <td id="j10">Gongales</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
-                                        <td>Admond sayhel</td>
+                                        <td id="j11">Admond sayhel</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
-                                        <td>Remond</td>
+                                        <td id="j12">Remond</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
                                         <td>$<?php echo rand(50,100) * 1000;?></td>
                                         <td>USD</td>
@@ -1040,6 +1071,8 @@
     @include('includes.home_footer')
 </body>
 @include('includes.home_script')
+<script type="tet/javascript" src=" {{ asset('assets/js/particles/particles.js') }}"></script>
+<script type="tet/javascript" src=" {{ asset('assets/js/particles/app.js') }}"></script>
 <!-- Mirrored from rockstheme.com/rocks/aievari-live/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 18:29:30 GMT -->
 
 </html>

@@ -51,7 +51,7 @@
                                 <div class="single-icon">
                                     <i class="fa fa-mobile"></i>
                                     <p>
-                                        Call : +0011-564-543<br>
+                                        Call : +447760784971<br>
                                         <span>Monday-Friday (10am-18pm)</span>
                                     </p>
                                 </div>
