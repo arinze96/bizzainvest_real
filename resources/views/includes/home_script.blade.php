@@ -2,8 +2,8 @@
 
 <!-- jquery latest version -->
 <!-- bootstrap js -->
-<script type="tet/javascript" src=" {{ asset('assets/js/particles/particles.js') }}"></script>
-<script type="tet/javascript" src=" {{ asset('assets/js/particles/app.js') }}"></script>
+<script  src=" {{ asset('assets/particles.js') }}"></script>
+<script  src=" {{ asset('assets/app.js') }}"></script>
 <script src=" {{ asset('assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
 <script src=" {{ asset('assets/js/bootstrap.min.js') }}"></script>
 <!-- owl.carousel js -->

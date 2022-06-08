@@ -8,6 +8,8 @@
     <title>Bitazza INVEST</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src=" {{ asset('assets/particles.js') }}"></script>
+    <script src=" {{ asset('assets/app.js') }}"></script>
 
 
 
@@ -17,63 +19,65 @@
 
 <body>
 
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Certification of Incoporation</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="col-lg-12 ">
-                    <div style="">
-                        <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
-                            src="{{ asset('assets/images/cert5.jpg') }}" alt="About" />
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Certification of Incoporation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-lg-12 ">
+                        <div style="">
+                            <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
+                                src="{{ asset('assets/images/cert5.jpg') }}" alt="About" />
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 ">
+                        <div style="margin-top: 50px ">
+                            <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
+                                src="{{ asset('assets/images/just3.jpg') }}" alt="About" />
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-12 ">
-                    <div style="margin-top: 50px ">
-                        <img style="width:70%;object-fit:contain;margin:3px auto;display:block;"
-                            src="{{ asset('assets/images/just3.jpg') }}" alt="About" />
-                    </div>
+                <div class="modal-footer">
+                    {{-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> --}}
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
-            <div class="modal-footer">
-              {{-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> --}}
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
-    <div class="slide-area fix" data-stellar-background-ratio="0.6" >
+    </div>
+
+    {{-- <div class="slide-area fix" data-stellar-background-ratio="0.6">
         <div class="display-table">
             <div class="display-table-cell" id="particles-js">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <!-- Start Slider content -->
                             <div class="slide-content text-center">
-                                <h4 class="title2" >Freedom Begins Here</h4>
-                                {{-- <h4  style="color: white">Start your crypto journey on the world's fastest growing investment and crypto trading platform. i you are seeking financial freedom this is the best platform for you</h4> --}}
+                                <h4 class="title2">Freedom Begins Here</h4>
                                 <div class="layer-1-3">
                                     <a href="{{ route('user.login') }}" class="ready-btn left-btn">Get started</a>
                                     <div class="video-content">
-                                        <a href="https://youtu.be/SKlduIEsp9c"
-                                            class="video-play vid-zone">
+                                        <a href="https://youtu.be/SKlduIEsp9c" class="video-play vid-zone">
                                             <i class="fa fa-play"></i>
                                             <span>watch video</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Slider content -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div> --}}
+
+    <div id="particles-js">
+        <h1 id="caption">Particle.js</h1>
     </div>
 
     <div class="counter-area fix area-padding-2">
@@ -307,10 +311,7 @@
                 <div class="col-lg-12 ">
                     <div class="embed-responsive embed-responsive-16by9">
                         <video class="embed-responsive-item" controls>
-                            <source src="{{ asset('assets/videos/nh.mp4') }}"
-                                {{-- poster="{{ asset('assets/images/blog/Bristle Assets-01.png') }}" --}}
-
-                                 type="video/mp4">
+                            <source src="{{ asset('assets/videos/nh.mp4') }}" {{-- poster="{{ asset('assets/images/blog/Bristle Assets-01.png') }}" --}} type="video/mp4">
                             </source>
                         </video>
                     </div>
@@ -417,8 +418,9 @@
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="self-content">
-                        <h4>An investment multi-national where you invest money for experts to trade and handle your profits 
-                          , We help you save for your future. Grow Money speedly
+                        <h4>An investment multi-national where you invest money for experts to trade and handle your
+                            profits
+                            , We help you save for your future. Grow Money speedly
                             without any risk. </h4>
                         <span class="talk-text"></span>
                     </div>
@@ -435,7 +437,8 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="section-headline text-center">
                         <h3>Referral bonus level</h3>
-                        Bonus referral program by Bitazza Invest is provided for those who invate clients. If you telling
+                        Bonus referral program by Bitazza Invest is provided for those who invate clients. If you
+                        telling
                         about advantages of our company,
                         then it is possible not only to help them to receive financial benefit, but also to receive
                         additional percent.
@@ -524,37 +527,37 @@
                                     <tr>
                                         <td id="j1"></td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>Bitcoin</td>
                                     </tr>
                                     <tr>
                                         <td id="j2">Jonshon</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td id="j3">Hopper</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>Ripple</td>
                                     </tr>
                                     <tr>
                                         <td id="j4">Admond sayhel</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>Bitcoin</td>
                                     </tr>
                                     <tr>
                                         <td id="j5">Anjel july</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td id="j6">Lagisha</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>Bitcoin</td>
                                     </tr>
                                 </table>
@@ -576,37 +579,37 @@
                                     <tr>
                                         <td id="j7">Arnold</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td id="j8">Jhon Abra</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td id="j9">Lanisha</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td id="j10">Gongales</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td id="j11">Admond sayhel</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>USD</td>
                                     </tr>
                                     <tr>
                                         <td id="j12">Remond</td>
                                         <td><?php echo date('d F, Y (l)'); ?></td>
-                                        <td>$<?php echo rand(50,100) * 1000;?></td>
+                                        <td>$<?php echo rand(50, 100) * 1000; ?></td>
                                         <td>USD</td>
                                     </tr>
                                 </table>
@@ -626,7 +629,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="banner-all area-80 text-center">
                         <div class="banner-content">
-                            <h3>Our investment plans reaches out to any one  world wide </h3>
+                            <h3>Our investment plans reaches out to any one world wide </h3>
                             <a class="banner-btn" href="{{ route('user.register') }}">Sign up now</a>
                         </div>
                     </div>
@@ -883,7 +886,8 @@
                                         <div id="check1" class="panel-collapse collapse in">
                                             <div class="panel-body">
                                                 <p>
-                                                    To make a investment you must first become a member of Bitazza invest
+                                                    To make a investment you must first become a member of Bitazza
+                                                    invest
                                                     . Once you are signed up, you can make your first deposit. All
                                                     deposits must be made through the Members Area. You can login using
                                                     the member username and password you receive when signup.</p>
@@ -1043,8 +1047,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <textarea id="message" rows="7" placeholder="Message" class="form-control" required
-                                            data-error="Write your message"></textarea>
+                                        <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
                                         <div class="help-block with-errors"></div>
                                         <button type="submit" id="submit" class="quote-btn">Submit</button>
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
@@ -1070,9 +1073,8 @@
 
     @include('includes.home_footer')
 </body>
+
 @include('includes.home_script')
-<script type="tet/javascript" src=" {{ asset('assets/js/particles/particles.js') }}"></script>
-<script type="tet/javascript" src=" {{ asset('assets/js/particles/app.js') }}"></script>
 <!-- Mirrored from rockstheme.com/rocks/aievari-live/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 18:29:30 GMT -->
 
 </html>

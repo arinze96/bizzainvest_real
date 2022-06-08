@@ -42,10 +42,26 @@
 <!--End of Tawk.to Script-->
 
 <style>
-    
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+    }
     #particles-js {
-        width: 100%,
-            height: 100vh
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/assets/images/tt.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            /* background-color: green; */
+    }
+    #caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white
     }
 
     nav {
