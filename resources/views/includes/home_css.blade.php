@@ -57,6 +57,10 @@
             /* background-color: green; */
     }
     #caption{
+        justify-content: center;
+        align-items: center,
+    }
+    #caption1{
         position: absolute;
         top: 50%;
         left: 50%;
