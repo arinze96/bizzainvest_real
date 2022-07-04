@@ -156,7 +156,7 @@
                                     <div class="rates">
                                         <span class="prices">300%</span><span class="users"></span>
                                     </div>
-                                    <span class="per-day">5 days</span>
+                                    <span class="per-day">24 hrs</span>
                                 </div>
                                 <ol class="pricing-text">
                                     <li class="check">Minimum : $50,000</li>
