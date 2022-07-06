@@ -24,7 +24,25 @@
                 <button style="background-color: rgb(152,204,159); width: 150px" type="button" class="btn btn-primary">Register</button>
             </a>
         </li>
-        <li><a href="{{ route('app.home') }}"><i class="fa fa-envelope"></i> support@bitazzainvest.com</a>
+        {{-- <li><a href="{{ route('app.home') }}"><i class="fa fa-envelope"></i> support@bitazzainvest.com</a>
+        </li> --}}
+        <li>
+            <div id="google_translate_element"></div>
+
+                    <script type="text/javascript">
+                        var duplicate_google_translate_counter = 0; //this stops google adding button multiple times
+
+                        function googleTranslateElementInit() {
+                            if (duplicate_google_translate_counter == 0) {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'en'
+                                }, 'google_translate_element');
+                            }
+                            duplicate_google_translate_counter++;
+                        }
+                    </script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                    </script>
         </li>
         <li><a href="{{ route('app.home') }}"><i class="fa fa-phone"></i> +447760784971</a></li>
     </ul>

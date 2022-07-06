@@ -50,6 +50,7 @@
             </div>
         </div>
     </div>
+    
 
     {{-- <div class="slide-area fix" data-stellar-background-ratio="0.6">
         <div class="display-table">
@@ -82,6 +83,7 @@
         <div class="container">
             <div class="row"  style="margin-top: 150px">
                 <div class="col-md-12 col-sm-12 col-xs-12">
+                    
                     <div class="slide-content text-center">
                         <h4 class="title2">Freedom Begins Here</h4>
                         <h4 style="color: white">Start your crypto journey on the world fastest growing investment and crypto trading platform. if you are seeking financial freedom this is the best platform for you</h4>
