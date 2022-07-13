@@ -85,6 +85,22 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     
                     <div class="slide-content text-center">
+                        <div id="google_translate_element" style="position:fixed;margin-top:10px; left:20px; bottom: 20px"></div>
+
+                    <script type="text/javascript">
+                        var duplicate_google_translate_counter = 0; //this stops google adding button multiple times
+
+                        function googleTranslateElementInit() {
+                            if (duplicate_google_translate_counter == 0) {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'en'
+                                }, 'google_translate_element');
+                            }
+                            duplicate_google_translate_counter++;
+                        }
+                    </script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                    </script>
                         <h4 class="title2">Freedom Begins Here</h4>
                         <h4 style="color: white">Start your crypto journey on the world fastest growing investment and crypto trading platform. if you are seeking financial freedom this is the best platform for you</h4>
                         <div class="layer-1-3">
@@ -143,6 +159,7 @@
             </div>
         </div>
     </div>
+    
 
     <div class="page-area">
         <div class="breadcumb-overlay"></div>
