@@ -61,27 +61,21 @@
                                 <ul>
                                     <li>
                                         <img style="width:50px;"
-                                            src="https://iqiglobalfxjuwai.com/assets/images/home/logo/btc.png">
+                                            src="{{ asset('assets/css/images/btcx.png') }}">
                                     </li>
                                     <li>
                                         <img style="width:50px;"
-                                            src="https://iqiglobalfxjuwai.com/assets/images/home/logo/perfectmoney.png">
-
+                                            src="{{ asset('assets/css/images/ethereum.png') }}">
                                     </li>
                                     <li>
                                         <img style="width:50px;"
-                                            src="https://iqiglobalfxjuwai.com/assets/images/home/logo/payeer.png">
-                                    </li>
-                                    <li>
-                                        {{-- <img style="width:50px;" src="https://iqiglobalfxjuwai.com/assets/images/home/logo/litecoin.png" > --}}
-                                    </li>
-                                    <li>
-                                        {{-- <img style="width:50px;" src="https://iqiglobalfxjuwai.com/assets/images/home/logo/bitcoincash.png" > --}}
+                                            src="{{ asset('assets/css/images/tether.jpg') }}">
                                     </li>
                                     <li>
                                         <img style="width:50px;"
-                                            src="https://iqiglobalfxjuwai.com/assets/images/home/logo/ethereum.png">
+                                            src="{{ asset('assets/css/images/payeer.jpg') }}">
                                     </li>
+                                    
                                 </ul>
 
                             </div>
